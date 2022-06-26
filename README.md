@@ -15,5 +15,15 @@ https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Health_Persona
 The dataset had over 3096336 Customers reviews recorded. In order to focus on reviews that would be considered more likely to be helpful, we needed to filter the dataset by:
 
 Count of Total Votes equal or greater than 20.
+
+
 Percent of Helpful Votes to Total Votes equal or greater than 50%.
 
+![Vine_review_filter.png](https://github.com/klkanchi/Amazon_Vine_Analysis/blob/main/Vine_review_filter.png)
+
+## Summary
+Based on the results, Vine members did not show bias when rating their products considering that the number of 5-star ratings was about 10% less than Non-Vine members (44.26% vs. 61.61%). With this, we can assume that Vine customers are more critical when submitting their review. However, in order to support this assumption further, we should include all of the data rather than filtering it to a percentage of helpful vs. total votes as we did for this analysis. Reviewing the data as is would give us more information and allow us to further support our assumption as shown below.
+
+![Five_star_reviews.png](https://github.com/klkanchi/Amazon_Vine_Analysis/blob/main/Five_star_reviews.png)
+
+In addition, running the same analysis using datasets from different product categories can provide us with the whole picture of whether reviews made by Vine members are bias.
